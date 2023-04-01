@@ -1,0 +1,9 @@
+#INSTALL
+
+Install-Module VMware.PowerCLI
+Set-ExecutionPolicy RemoteSigned
+Set-PowerCLIConfiguration -InvalidCertificateAction:Ignore -ParticipateInCeip:$false
+
+# load module for scripting
+Import-Modules VMware.PowerCLI
+
